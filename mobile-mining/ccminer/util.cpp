@@ -141,7 +141,7 @@ void applog(int prio, const char *fmt, ...)
 			tm.tm_sec,
 			color,
 			fmt,
-			use_colors ? CL_CYN : ""
+			use_colors ? CL_N : ""
 		);
 		if (prio == LOG_RAW) {
 			// no time prefix, for ccminer -n
