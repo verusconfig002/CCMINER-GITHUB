@@ -136,12 +136,12 @@ void applog(int prio, const char *fmt, ...)
 			tm.tm_year - 100,
 			tm.tm_mon + 1,
 			tm.tm_mday + 0,
-			tm.tm_hour + 0,
+			tm.tm_hour + 7,
 			tm.tm_min,
 			tm.tm_sec,
 			color,
 			fmt,
-			use_colors ? CL_N : ""
+			use_colors ? CL_CYN : ""
 		);
 		if (prio == LOG_RAW) {
 			// no time prefix, for ccminer -n
