@@ -46,12 +46,16 @@ while True:
         load = set.read()
         loads = json.loads(load)
         ip = loads['ip']
+        file = loads['file']
         	
         print("\033[36m")
-        print("ip address ที่บันทึก")
+        print("user ที่บันทึก")
         print("ip  =",ip)
+        print("file ที่เรียกใช้งาน")
+        print("file  =",file)
         print("\033[0m\n")
-        print("\033[31mโปรดตรวจสอบการตั้งค่า ถ้าถูกต้อง ให้ใช้คำสั่ง  run-miner  เพื่อเปิดขุด\033[0m")
+        print("\033[31mโปรดตรวจสอบการตั้งค่า ถ้าถูกต้อง ให้ใช้คำสั่ง  run-miner  เพื่อเปิดขุด หรือ รอสักครู่ \033[0m")
+        time.sleep 5
     break
 
 
