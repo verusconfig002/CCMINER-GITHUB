@@ -33,6 +33,11 @@ zergpool = ["stratum+tcp://verushash.mine.zergpool.com:3300","stratum+tcp://veru
 def runOffline():
     banner()
     try:
+         with open("setip/ip.json", encoding="utf-8") as set:
+            load = set.read()
+            loads = json.loads(load)
+            ip = loads['ip']
+            file = loads['file']
         with open("set-miner/{file}.json", encoding="utf-8") as set:
             load = set.read()
             loads = json.loads(load)
@@ -51,11 +56,6 @@ def runOffline():
            name = "noname"
         if cpu == "":
            cpu = "1"
-        with open("setip/ip.json", encoding="utf-8") as set:
-            load = set.read()
-            loads = json.loads(load)
-            ip = loads['ip']
-            file = loads['file']
 
         print("\033[93mCONNECT USER\033[00m\n")
         print("ip =",ip)
