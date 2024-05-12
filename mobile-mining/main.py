@@ -58,7 +58,7 @@ def runOffline():
            cpu = "1"
 
         print("\033[93mCONNECT USER\033[00m\n")
-        print("ip =",ip)
+        print("USER =",ip)
         print("file =",file)
         print("\033[1;34;40m")   
         print("WALLET =",wallet)
