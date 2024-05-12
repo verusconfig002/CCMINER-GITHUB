@@ -19,6 +19,7 @@ def setip():
     try:
         print("ตัวอย่าง:  \033[93m192.168.1.28:\033[00m""\033[32m8080\033[00m")
         ip = input("   ip :  ")
+        file = input("   file :  ")
         print("\033[35m-----------------------------------------\033[0m")
         
         
@@ -31,7 +32,8 @@ def setip():
         os.system("python3 addip.py")
 
     push = {
-        'ip': ip
+        'ip': ip,
+        'file': file
     }
     with open("setip/ip.json", "w") as set:
         json.dump(push, set, indent=4)
