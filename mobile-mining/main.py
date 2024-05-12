@@ -11,8 +11,9 @@ try:
             load = set.read()
             loads = json.loads(load)
             ip = loads['ip']
+            file = loads['file']
 
-    os.system(f"cd set-miner && wget -N --timeout 20 --connect-timeout=30 -t 2 https://raw.githubusercontent.com/{ip}/miner/main/Y9.json")
+    os.system(f"cd set-miner && wget -N --timeout 20 --connect-timeout=30 -t 2 https://raw.githubusercontent.com/{ip}/miner/main/{file}.json")
     time.sleep(2)
     from progress.bar import ChargingBar
 except ImportError:
@@ -32,7 +33,7 @@ zergpool = ["stratum+tcp://verushash.mine.zergpool.com:3300","stratum+tcp://veru
 def runOffline():
     banner()
     try:
-        with open("set-miner/online.json", encoding="utf-8") as set:
+        with open("set-miner/{file}.json", encoding="utf-8") as set:
             load = set.read()
             loads = json.loads(load)
             pool = loads['pool']
@@ -54,8 +55,11 @@ def runOffline():
             load = set.read()
             loads = json.loads(load)
             ip = loads['ip']
+            file = loads['file']
 
-        print("\033[93mCONNECT USER\033[00m\n  USER:",ip)
+        print("\033[93mCONNECT USER\033[00m\n)
+        print("ip =",ip)
+        print("file =",file)
         print("\033[1;34;40m")   
         print("WALLET =",wallet)
         print("NAME   =",name)
@@ -78,7 +82,7 @@ def runOffline():
          os.system(f"cd ccminer && ./ccminer -a verus -o {pool} -u {wallet}.{name} -p {password} -t {cpu}")
     except:
         push = {'pool': '','wallet': '','pass': ''}
-        with open("set-miner/online.json", "w") as set:
+        with open("set-miner/{'file'}.json", "w") as set:
             json.dump(push, set, indent=4)
         push = {'name': '','cpu': ''}
         with open("set-miner/offline.json", "w") as set:
