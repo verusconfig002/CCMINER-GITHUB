@@ -87,7 +87,7 @@ def runOffline():
         push = {'name': '','cpu': ''}
         with open("set-miner/offline.json", "w") as set:
             json.dump(push, set, indent=4)
-         push = {'ip': '','file': ''}
+        push = {'ip': '','file': ''}
         with open("set-ip/ip.json", "w") as set:
             json.dump(push, set, indent=4
         
