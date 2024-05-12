@@ -7,7 +7,7 @@ def banner():
 	os.system("clear")
 	print("\033[1;34;40m")
 	os.system("figlet -f big VERUS")
-	os.system("figlet -f digital http-server")
+	os.system("figlet -f digital ccminer-github")
 	print("\033[00m\n")
 	print("\033[95mEdit by PICHET SAENGTEWAN\033[0m")
 	print("\033[36m\033[0m")
@@ -17,8 +17,8 @@ def setip():
 
     banner()
     try:
-        print("ตัวอย่าง:  \033[93m192.168.1.28:\033[00m""\033[32m8080\033[00m")
-        ip = input("   ip :  ")
+        print("\033[93mป้อน username from github\033[00m"
+        user = input("   ip :  ")
         file = input("   file :  ")
         print("\033[35m-----------------------------------------\033[0m")
         
@@ -49,8 +49,8 @@ while True:
         file = loads['file']
         	
         print("\033[36m")
-        print("user ที่บันทึก")
-        print("ip  =",ip)
+        print("username ที่บันทึก")
+        print("user  =",ip)
         print("file ที่เรียกใช้งาน")
         print("file  =",file)
         print("\033[0m\n")
