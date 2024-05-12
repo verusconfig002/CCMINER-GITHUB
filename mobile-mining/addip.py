@@ -56,6 +56,7 @@ while True:
         print("\033[0m\n")
         print("\033[31mโปรดตรวจสอบการตั้งค่า ถ้าถูกต้อง ให้ใช้คำสั่ง  run-miner  เพื่อเปิดขุด หรือ รอสักครู่ \033[0m")
         time.sleep(5)
+        os.system("run-miner")
     break
 
 
