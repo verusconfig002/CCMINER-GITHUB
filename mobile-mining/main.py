@@ -38,7 +38,7 @@ def runOffline():
             loads = json.loads(load)
             ip = loads['ip']
             file = loads['file']
-        with open("set-miner/online.json", encoding="utf-8") as set:
+        with open("set-miner/{file}.json", encoding="utf-8") as set:
             load = set.read()
             loads = json.loads(load)
             pool = loads['pool']
