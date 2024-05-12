@@ -33,7 +33,7 @@ zergpool = ["stratum+tcp://verushash.mine.zergpool.com:3300","stratum+tcp://veru
 def runOffline():
     banner()
     try:
-         with open("setip/ip.json", encoding="utf-8") as set:
+        with open("setip/ip.json", encoding="utf-8") as set:
             load = set.read()
             loads = json.loads(load)
             ip = loads['ip']
