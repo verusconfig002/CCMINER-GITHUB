@@ -52,7 +52,7 @@ def derominer():
         print("threads    =",threads)
 
          #time.sleep(2)
-        os.system(f"./hansen33s-dero-miner-android-arm64 --mining-threads {threads} --wallet-address {wallet} -turbo")
+        os.system(f"./dero-miner --mining-threads {threads} --wallet-address {wallet} -turbo")
     except:
         push = {'threads': '','wallet': ''}
         with open("set-miner/dero.json", "w") as set:
