@@ -1,0 +1,4 @@
+load = set.read()
+            loads = json.loads(load)
+            ip = loads['ip']
+            file = loads['file']
