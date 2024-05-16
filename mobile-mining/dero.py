@@ -44,6 +44,7 @@ def derominer():
             load = set.read()
             loads = json.loads(load)
             ip = loads['ip']
+            file = loads['file']
 
         print("\033[93mCONNECT NETWORK\033[00m\n  http://",ip)
         print("\033[1;34;40m")   
