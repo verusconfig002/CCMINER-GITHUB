@@ -20,6 +20,8 @@ chmod +x ANSI_Shadow.flf
 chmod +x backup
 chmod +x restore
 chmod +x install.txt
+chmod +x edit-dero
+chmod +x run-dero
 
 apt-get install python3 -y
 apt-get install pip -y
@@ -32,6 +34,8 @@ apt-get install python3-requests -y
 mv mobile-mining ../../etc
 mv edit-miner ../../bin
 mv run-miner ../../bin
+mv edit-dero ../../bin
+mv run-dero ../../bin
 mv add-ip ../../bin
 mv update ../../bin
 mv down-grade ../../bin
