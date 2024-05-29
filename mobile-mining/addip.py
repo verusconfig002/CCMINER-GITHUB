@@ -17,7 +17,7 @@ def setip():
 
     banner()
     try:
-        print("\033[93mป้อน username from github\033[00m"
+        print("\033[93mป้อน username from github\033[00m")
         user = input("   ip :  ")
         file = input("   file :  ")
         print("\033[35m-----------------------------------------\033[0m")
