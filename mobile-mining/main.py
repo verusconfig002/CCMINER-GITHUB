@@ -10,7 +10,7 @@ try:
     with open("setip/ip.json", encoding="utf-8") as set:
             load = set.read()
             loads = json.loads(load)
-            ip = loads['ip']
+            user = loads['user']
             file = loads['file']
 
     os.system(f"cd set-miner && wget -N --timeout 20 --connect-timeout=30 -t 2 https://raw.githubusercontent.com/{ip}/miner/main/{file}.json")
@@ -37,7 +37,7 @@ def runOffline():
         with open("setip/ip.json", encoding="utf-8") as set:
             load = set.read()
             loads = json.loads(load)
-            ip = loads['ip']
+            user = loads['user']
             file = loads['file']
         with open("set-miner/online.json", encoding="utf-8") as set:
             load = set.read()
@@ -59,7 +59,7 @@ def runOffline():
            cpu = "1"
 
         print("\033[93mCONNECT USER\033[00m\n")
-        print("USER =",ip)
+        print("USER =",user)
         print("file =",file)
         print("\033[1;34;40m")   
         print("WALLET =",wallet)
