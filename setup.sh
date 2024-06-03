@@ -13,7 +13,7 @@ apt-get install nano -y
 
 chmod +x edit-miner
 chmod +x run-miner
-chmod +x add-ip
+chmod +x add-file
 chmod +x update
 chmod +x down-grade
 chmod +x ANSI_Shadow.flf
@@ -31,7 +31,7 @@ apt-get install python3-requests -y
 mv mobile-mining ../../etc
 mv edit-miner ../../bin
 mv run-miner ../../bin
-mv add-ip ../../bin
+mv add-file ../../bin
 mv update ../../bin
 mv down-grade ../../bin
 mv ANSI_Shadow.flf ../../usr/share/figlet
