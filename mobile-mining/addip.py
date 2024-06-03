@@ -18,12 +18,12 @@ def setip():
     banner()
     try:
         print("\033[93mป้อน username from github\033[00m")
-        user = input("   ip :  ")
+        user = input("   user :  ")
         file = input("   file :  ")
         print("\033[35m-----------------------------------------\033[0m")
         
         
-        if ip == "":
+        if file == "":
             raise Exception()
     except:
         os.system("@cls||clear")
@@ -32,7 +32,7 @@ def setip():
         os.system("python3 addip.py")
 
     push = {
-        'ip': ip,
+        'user': user,
         'file': file
     }
     with open("setip/ip.json", "w") as set:
@@ -45,12 +45,12 @@ while True:
     with open("setip/ip.json",encoding="utf-8") as set:
         load = set.read()
         loads = json.loads(load)
-        ip = loads['ip']
+        user = loads['user']
         file = loads['file']
         	
         print("\033[36m")
         print("username ที่บันทึก")
-        print("user  =",ip)
+        print("user  =",user)
         print("file ที่เรียกใช้งาน")
         print("file  =",file)
         print("\033[0m\n")
